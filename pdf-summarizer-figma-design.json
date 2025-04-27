@@ -1,0 +1,80 @@
+{
+  "name": "PDF Summarizer UI Design",
+  "description": "Figma design file JSON representation for the PDF Summarizer app UI",
+  "frames": [
+    {
+      "id": "frame1",
+      "name": "Main Screen",
+      "elements": [
+        {
+          "type": "text",
+          "content": "PDF Summarizer",
+          "style": {
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "fontFamily": "Roboto, sans-serif",
+            "color": "#1F2937",
+            "marginBottom": 24
+          }
+        },
+        {
+          "type": "radio-group",
+          "name": "modeSelection",
+          "options": [
+            { "label": "Temp Mode", "value": "temp" },
+            { "label": "Final Mode", "value": "final" }
+          ],
+          "style": {
+            "marginBottom": 16
+          }
+        },
+        {
+          "type": "file-upload",
+          "name": "fileUpload",
+          "accept": ".pdf,.zip",
+          "label": "Upload PDF or ZIP file",
+          "style": {
+            "marginBottom": 16
+          }
+        },
+        {
+          "type": "text-input",
+          "name": "directoryInput",
+          "label": "Select Directory (Final Mode only)",
+          "placeholder": "Enter S3 directory path",
+          "style": {
+            "marginBottom": 24
+          }
+        },
+        {
+          "type": "button",
+          "name": "uploadButton",
+          "label": "Upload and Summarize",
+          "style": {
+            "backgroundColor": "#3B82F6",
+            "color": "#FFFFFF",
+            "padding": "12px 24px",
+            "borderRadius": 6,
+            "fontWeight": "bold",
+            "cursor": "pointer"
+          }
+        },
+        {
+          "type": "summary-display",
+          "name": "summaryDisplay",
+          "label": "Summary",
+          "style": {
+            "marginTop": 32,
+            "backgroundColor": "#F3F4F6",
+            "padding": 16,
+            "borderRadius": 6,
+            "minHeight": 120,
+            "fontFamily": "Roboto, sans-serif",
+            "fontSize": 16,
+            "color": "#374151"
+          }
+        }
+      ]
+    }
+  ]
+}
